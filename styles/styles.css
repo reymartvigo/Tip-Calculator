@@ -1,0 +1,239 @@
+header {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 5rem auto 0;
+  padding: 1rem;
+}
+
+.error-text {
+  color: red;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1.5rem;
+  height: 30rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 60rem;
+}
+main section {
+  height: 100%;
+  width: 100%;
+}
+main section div {
+  height: auto;
+}
+main .option {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .option h2 {
+  margin-bottom: 0.2rem;
+  letter-spacing: 1px;
+  color: hsl(184deg, 14%, 56%);
+}
+main .option .bill {
+  width: 100%;
+}
+main .option .bill form .form-group {
+  display: block;
+  width: 100%;
+}
+main .option .bill form .form-group input {
+  background-image: url(../image/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+  font-weight: 700;
+  color: hsl(183deg, 100%, 15%);
+  background: hsl(189deg, 41%, 97%);
+  text-align: right;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  width: 100%;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+main .option .bill form .form-group input:focus {
+  cursor: pointer;
+  outline: 3px solid hsl(172deg, 67%, 45%);
+}
+main .option .tip .items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1.5rem;
+}
+main .option .tip button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  background-color: hsl(183deg, 100%, 15%);
+  color: white;
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+main .option .tip button:focus {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+main .option .tip .custom-group {
+  width: 100%;
+}
+main .option .tip .custom-group input {
+  font-weight: 700;
+  color: hsl(183deg, 100%, 15%);
+  background: hsl(189deg, 41%, 97%);
+  text-align: center;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  width: 8rem;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  height: 3rem;
+  margin-top: 0.1rem;
+}
+main .option .tip .custom-group input:focus {
+  cursor: pointer;
+  outline: 3px solid hsl(172deg, 67%, 45%);
+}
+main .option .people form .people-group div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .option .people form input {
+  background-image: url(../image/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+  font-weight: 700;
+  color: hsl(183deg, 100%, 15%);
+  background: hsl(189deg, 41%, 97%);
+  text-align: right;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  width: 100%;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+main .option .people form input:focus {
+  cursor: pointer;
+  outline: 3px solid hsl(172deg, 67%, 45%);
+}
+main .result {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  background: hsl(183deg, 100%, 15%);
+}
+main .result button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  margin-top: 3rem;
+  padding: 1rem;
+  background: rgb(12, 104, 108);
+  font-size: 1.2rem;
+  color: hsl(186deg, 14%, 43%);
+}
+main .result button:hover {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+main .result div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .result div h2 {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #fff;
+}
+main .result div h2 span {
+  color: hsl(184deg, 14%, 56%);
+}
+main .result div p {
+  color: hsl(172deg, 67%, 45%);
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 200px) and (max-width: 920px) {
+  header {
+    margin: 2rem auto 0;
+  }
+  main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    height: auto;
+    width: 100%;
+  }
+  main .option .tip .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main .option .tip button {
+    width: 100%;
+    height: 4rem;
+  }
+  main .option .tip .custom-group input {
+    height: auto;
+    width: 100%;
+  }
+  main .result {
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+  }
+  main .result button {
+    margin-top: 0.3rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+  main .result div h2 {
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+  main .result div p {
+    font-size: 2rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185deg, 41%, 84%);
+}/*# sourceMappingURL=styles.css.map */

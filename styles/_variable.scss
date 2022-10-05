@@ -1,0 +1,54 @@
+$font: "Space Mono", monospace;
+$font-size: 24px;
+$font-weight: 700;
+$bg-color: hsl(185, 41%, 84%);
+$border: 1px solid #000;
+$main-bg: hsl(0, 0%, 100%);
+$heading-color: hsl(184, 14%, 56%);
+$outline: 3px solid hsl(172, 67%, 45%);
+
+@mixin display($direction: row) {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: $direction;
+  align-items: center;
+  gap: 3rem;
+}
+
+@mixin section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin inputTheme($width: 100%, $text-align: right) {
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  background: hsl(189, 41%, 97%);
+  text-align: $text-align;
+  font-size: $font-size;
+  font-family: $font;
+  width: $width;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+@mixin bg {
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+}
+
+@mixin btnFocus {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+@mixin button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  font-family: $font;
+  font-weight: $font-weight;
+}
